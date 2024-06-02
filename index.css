@@ -30,6 +30,14 @@ h2{
     margin-top: 80px;
     font-size: 3rem;
 }
+s{
+    color: rgb(121, 125, 125);
+}
+hr{
+   background-color: rgb(217, 207, 207);
+   height: 0.5px;
+   border: none;
+}
 .header-1-container{
 
     background-color: #f9f5ef;;
@@ -307,4 +315,161 @@ h2{
     font-size: 14px;
     font-weight: 500;
     margin: 10px 0;
+}
+
+.footer-1{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #ff4713;
+    padding: 70px 150px 70px 50px;
+}
+.footer-1-text{
+    font-size: 20px;
+    font-family: var(--font-headline);
+    color: white;
+    font-weight: 700;
+}
+.footer-1-text div{
+    font-size: 40px;
+    line-height: 0.9;
+    letter-spacing: -3px;
+
+}
+.footer-1-text p{
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+.footer-1-text a{
+    text-decoration: underline;
+    text-underline-offset: 10%;
+    font-weight: 700;
+}
+
+.footer-1-input i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.footer-1-input input{
+    /* position: absolute; */
+    background: none;
+    border: none;
+    margin: auto;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+::placeholder{
+    color: black;
+    font-weight: 600;
+}
+input:focus{
+    background-color:   #f7704a;
+    outline: none;
+}
+.footer{
+    padding: 30px 30px 0 30px;
+    background-color: black;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+}
+.footer h2{
+    color: #ff4713;
+    margin: 0;
+    text-align: start;
+    font-size: 20px;
+    line-height: 2;
+}
+.footer ul{
+    padding: 0;
+    margin: 0;
+}
+.footer li{
+    color: white;
+    list-style-type: none;
+   line-height: 2;
+   cursor: pointer;
+}
+.footer i{
+    color: white;
+}
+.footer p{
+    line-height: 2;
+}
+.fa-brands{
+    font-size: 18px;
+}
+.footer li:hover{
+    text-decoration: underline;
+    color: #ff4713;
+    text-underline-offset: 2px;
+}
+.footer div{
+    color: #fff;
+
+}
+.greentext:hover{
+    color: green;
+}
+.footer span:hover{
+    color: green;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+
+}
+.footer-brand{
+    background-color: black;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 40px 10px  40px;
+}
+.footer-brand p{
+    padding: 80px 0 30px 0;
+    color: white;
+}
+.footer-jbl-logo{
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.footer-jbl-logo{
+    background-image: url(assets/footer-logo.svg);
+}
+.brands{
+    margin: 20px 0;
+}
+.brands img{
+    height: 4rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.brands img:hover{
+    opacity: 1;
+}
+.bot-chat{
+    background-color: #ff4713;
+    color: white;
+    width: fit-content;
+    position: absolute;
+    bottom: 20%;
+    right:-40px;
+    transform: rotate(-90deg);
+    position: fixed;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.bot-chat img{
+    width: 30px;
+
 }
