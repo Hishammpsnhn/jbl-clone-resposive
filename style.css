@@ -1,0 +1,401 @@
+:root {
+    --font-body: "abc-diatype", "ABC Diatype", "roc-grotesk", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-headline: "roc-grotesk", "Roc Grotesk", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-button: "abc-diatype", "ABC Diatype", "roc-grotesk", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-system: Arial, Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    --font-header: var(--font-body);
+    --font-body-alt: "roc-grotesk", "ITC Avant Garde", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    --font-avant: "ITC Avant Garde", "AvantGardeGothic Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    --font-helvetica: var(--font-body);
+    --font-roc: var(--font-headline);
+    --font-roc-wide: roc-grotesk-wide, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    --font-roc-extrawide: roc-grotesk-extrawide, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    --font-roc-compressed: roc-grotesk-compressed, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    --font-roc-condensed: roc-grotesk-condensed, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    --font-icon: "Material Symbols Outlined", "Material Icons", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+
+    overflow-x: hidden;
+}
+
+a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.header-1-container {
+    background-color: #f9f5ef;
+}
+.header-1-nav a{
+    text-decoration: none;
+}
+.header-1-nav a:hover{
+    text-decoration: underline solid black;
+}
+.header-2-sec1 a{
+    text-decoration: none;
+}
+.header-2-sec1 a:hover{
+        text-decoration: underline solid 2px red;
+        text-underline-offset: 2px;
+    
+}
+.header-2-sec1 button,
+.header-2-icons {
+    width: 20vw;
+}
+.service{
+    background-color: rgb(154, 154, 240);
+}
+.carousel-indicators {
+    margin: 0 !important;
+
+}
+.carousel-indicators [data-bs-target] {
+    width:  30% !important;
+    height: 2px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    background-color: #000000 !important;
+
+}
+
+.service a:hover {
+    text-decoration: underline solid 2px black;
+    text-underline-offset: 2px;
+}
+.service img{
+    height: 50px;
+    filter:invert(1) contrast(1.5);
+}
+.service-text {
+    font-size: 0.8rem;
+    text-decoration: none; /* Ensure no underline by default */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.service-text:hover {
+    color: #ff5733; /* Change this to your desired hover color */
+    text-decoration: underline;
+}
+.service-text:hover {
+    text-decoration: underline solid 2px black;
+    text-underline-offset: 2px;
+}
+
+.offcanvas {
+    top: 30px;
+}
+
+
+nav img {
+    height: 50px;
+}
+
+.catagories {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: fit-content;
+    margin: auto;
+    gap: 10px;
+
+}
+
+@media(max-width:767px) {
+    .catagories {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width:680px) {
+    .catagories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:480px) {
+    .catagories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.catagories div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.catagories img {
+    width: 120px;
+}
+
+.catagories span {
+    font-weight: 700;
+    line-height: .9;
+    text-transform: uppercase;
+}
+
+.catagories span:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.product-gif img {
+    width: 100%;
+    object-fit: cover;
+    margin: 20px auto;
+
+}
+
+@media(min-width:768px) {
+    .product-gif img {
+        width: 100%;
+        object-fit: cover;
+        margin: auto;
+    }
+}
+
+/* .card{
+    border:1px solid orange;
+} */
+.color-main div {
+    background-color: rgb(35, 62, 108);
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.color-main div:hover {
+    border: 1px solid rgb(255, 255, 255);
+    outline: 1px solid #000000;
+}
+
+.save {
+    background-color: red;
+    color: white;
+    font-size: 11px;
+    width: fit-content;
+    margin: 10px 0;
+}
+
+.temsandcodn {
+    color: rgb(154, 154, 240);
+    font-size: 13px;
+}
+
+.viewmore {
+    font-size: 14px;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card-img-top {
+    height: fit-content;
+    width: fit-content;
+}
+.card .heart-icon{
+    display: none;
+}
+.card:hover .heart-icon{
+    display: block;
+}
+
+.heart-icon{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+.footer-1 {
+    background-color: #ff4713;
+}
+
+.footer-1-input i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.footer-1-input input {
+    /* position: absolute; */
+    background: none;
+    border: none;
+    margin: auto;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 600;
+}
+
+input:focus {
+    background-color: #f7704a;
+    outline: none;
+}
+
+.footer-1-section {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+@media(max-width:768px) {
+    .footer-1-section {
+        position: relative;
+        width: 100%;
+    }
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer h3 {
+    color: #ff4713;
+    margin: 0;
+    text-align: start;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    color: white;
+    list-style-type: none;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.footer li:hover {
+    text-decoration: underline;
+    color: #ff4713;
+    text-underline-offset: 2px;
+}
+
+.greentext:hover {
+    color: green;
+}
+
+.footer span:hover {
+    color: green;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+
+}
+
+@media (min-width: 768px) {
+    .footer-item {
+        justify-content: end;
+    }
+}
+
+.footer-brand {
+    background-color: black;
+    flex-direction: row;
+}
+
+@media (max-width:1199px) {
+    .footer-brand {
+        flex-direction: column-reverse;
+    }
+}
+
+.footer-jbl-logo img {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+@media (max-width: 1199px) {
+
+    .footer-jbl-logo img {
+        width: 50%;
+        padding: 5px;
+    }
+}
+
+.brands img {
+    height: 4rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.brands {
+    margin: 20px 0;
+}
+
+@media (min-width:1199px) {
+    .footer-brand-details {
+        margin-top: 130px;
+        color: gray;
+    }
+}
+
+.footer-brand hr {
+    border-top: 2px solid #ff4713;
+}
+
+.brands img:hover {
+    opacity: 1;
+}
+
+.card-main::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-detalis,
+.india-logo {
+    font-size: 10px;
+}
+
+.ofcanvas-text h3 {
+    color: rgb(64, 61, 61);
+    font-family: var(--font-headline);
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.india-logo img {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.bot-chat {
+    background-color: #ff4713;
+    color: white;
+    width: fit-content;
+    position: absolute;
+    bottom: 20%;
+    right: -40px;
+    transform: rotate(-90deg);
+    position: fixed;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.bot-chat img {
+    width: 30px;
+
+}
