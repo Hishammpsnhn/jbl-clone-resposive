@@ -52,6 +52,9 @@ a {
 .service{
     background-color: rgb(154, 154, 240);
 }
+.offcanvas.show {
+    max-width:85% !important ;
+}
 .carousel-indicators {
     margin: 0 !important;
 
